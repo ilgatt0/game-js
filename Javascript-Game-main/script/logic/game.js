@@ -103,7 +103,6 @@ class Game {
         this.fireball.draw(this.ctx);
         this.ground.draw(this.ctx);
         this.obstacle.draw(this.ctx);
-        
     }
 
 }
