@@ -29,10 +29,8 @@ class Sprite extends Hitbox {
         this.position.x = spawnX;
         this.position.y = spawnY;
         this.velocity = new Vector2D(5, 0);
-        // this.velocity.x = 2;
-        // this.velocity.y = 0;
     }
-    // Yapdate
+    
     update() {
         this.clock.update();
         this.position.add(this.velocity);
@@ -43,7 +41,7 @@ class Sprite extends Hitbox {
             this.spriteX = (this.spriteX + 1) % this.maxSpriteX;
         }
     }
-    // Sprais
+    
     draw(ctx) {
         ctx.drawImage(this.image, this.spriteX * this.spriteWidth,
             this.spriteY * this.spriteHeight, 
