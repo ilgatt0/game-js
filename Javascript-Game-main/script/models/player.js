@@ -47,7 +47,7 @@ class Player extends Hitbox {
 
     jump() {
         if (this.canJump) {
-            this.velocity.y = 32;
+            this.velocity.y = 25;
         }
         if (this.position.y > conf.GROUND_Y) {
             this.canJump = false;
@@ -112,7 +112,6 @@ class Player extends Hitbox {
             }
         }
 
-
         if (this.moving) {
             if (this.update_timer.tick()) {
                 this.currentImageIndex += 1;
@@ -156,7 +155,10 @@ class Player extends Hitbox {
 
     drawScore(ctx) {
         ctx.fillStyle = "purple";
-        ctx.fillText("Score: " + this.score, 20, 30)
+        ctx.fillText("SCORE: " + this.score, 20, 30);
+        ctx.lineWidth = "3";
+        ctx.strokeStyle = "black";
+        ctx.strokeRect(20, 4, 190, 30);
     }
 
     checkCollisions() {

@@ -21,13 +21,10 @@ class Hitbox {
     }
     
     draw(ctx){
-        ctx.lineWidth = "4";
-        ctx.strokeStyle = "red";
+        ctx.lineWidth = "0";
+        ctx.strokeStyle = "white";
         ctx.strokeRect(this.position.x, ctx.canvas.height - this.position.y, this.width, this.height);
     }
-
-
-
 }
 
 export default Hitbox; 

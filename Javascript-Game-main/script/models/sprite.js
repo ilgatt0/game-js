@@ -49,7 +49,6 @@ class Sprite extends Hitbox {
             ctx.canvas.clientHeight - this.position.y, this.width, this.height);
             super.draw(ctx);
     }
-
 }
 
 export default Sprite;
